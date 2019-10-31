@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "91f834c5-a08d-4721-864e-0fb937c43d1e",
+		"name": "ETC德亚平台-浦发银企直联测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "浦发4402（账户余额查询）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"acctNo\":\"952A9997220008092\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/spdb/trade4402",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"spdb",
+						"trade4402"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "浦发8924（账户明细查询）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acctNo\": \"952A9997220008092\",\n    \"beginDate\": \"20191017\",\n    \"endDate\": \"20191017\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/spdb/trade8924",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"spdb",
+						"trade8924"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "浦发9004（日间明细下载）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acctNo\": \"952A9997220008092\",\n    \"tranDate\": \"20191017\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/spdb/trade9004",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"spdb",
+						"trade9004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "浦发8804（转账信息查询）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acctNo\": \"952A9997220008092\",\n    \"tranDate\": \"20191017\",\n    \"tranNo\": \"1571298452184\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/spdb/trade8804",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"spdb",
+						"trade8804"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "浦发8801（单笔支付)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"acctNo\": \"952A9997220008092\",\n    \"acctName\": \"浦发2489675304\",\n    \"payeeAcctNo\": \"952A9997220008349\",\n    \"payeeName\": \"浦发2878487587\",\n    \"payeeType\": \"1\",\n    \"amount\": \"0.01\",\n    \"sysFlag\": \"0\",\n    \"remitLocation\": \"0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/spdb/trade8801",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"spdb",
+						"trade8801"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
